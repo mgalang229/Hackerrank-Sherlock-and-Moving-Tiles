@@ -5,17 +5,14 @@ using namespace std;
 typedef long long ll;
 
 void decode() {
-	ll z, s1, s2, q;
-	cin >> z >> s1 >> s2 >> q;
-	if(s1 < s2) {
-		swap(s1, s2);
-	}
-	while(q--) {
-		ll ki;
-		cin >> ki;
-		double p = sqrt(ki);
-		cout << fixed << setprecision(4) << ((double) z - p) * sqrt(2) / (double) (s1 - s2);
-		cout << "\n";
+	ll l, s1, s2, Q;
+	cin >> l >> s1 >> s2 >> Q;
+	while(Q--) {
+		double q;
+		cin >> q;
+		q = sqrt(q);
+		cout << fixed << setprecision(4) << (sqrt(2 * (l - q) * (l - q))) / abs(s1-s2);
+		cout << "\n"; 
 	}
 }
 int main() {
