@@ -1,3 +1,5 @@
 # Hackerrank-Sherlock-and-Moving-Tiles
-Problem  
+### Problem  
 ![](capture.png)
+### Derivation of Formula
+![](formula.png)
